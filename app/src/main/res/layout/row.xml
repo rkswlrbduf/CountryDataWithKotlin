@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    tools:context="com.example.jjg04.myapplication.MainActivity">
+
+    <ImageView
+        android:id="@+id/img_flag"
+        android:layout_width="32dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="#fff33f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Nation"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/img_flag"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/capital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="capital"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/img_flag"
+        app:layout_constraintTop_toBottomOf="@+id/text_name" />
+
+</android.support.constraint.ConstraintLayout>
